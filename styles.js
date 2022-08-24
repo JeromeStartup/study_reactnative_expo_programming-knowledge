@@ -6,9 +6,6 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: "white",
         flex: 1
-    },
-    image: {
-        marginHorizontal: 40
     }
 });
 
