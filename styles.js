@@ -6,6 +6,11 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: "white",
         flex: 1
+    },
+    input: {
+        backgroundColor: 'pink',
+        padding: 20,
+        marginTop: 20
     }
 });
 
