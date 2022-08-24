@@ -6,6 +6,11 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: "white",
         flex: 1
+    },
+    label: {
+        fontSize: 20,
+        color: "red",
+        padding: 20
     }
 });
 
