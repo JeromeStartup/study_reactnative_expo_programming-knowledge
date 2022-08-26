@@ -1,35 +1,25 @@
-import { View } from 'react-native';
+import { useState } from 'react';
+import { Alert, TextInput, View } from 'react-native';
 import { Button } from 'react-native-elements';
 import styles from './styles';
-import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
+  const [name, setName] = useState("");
+  
   return (
     <View style={styles.container}>
-      <Button
-        title="Solid Button"
-        type="solid"
-        titleStyle={{ color: "yellow", fontSize: 30 }}
-      />
-      <Button
-        title="Outline Button"
-        type="outline"
-        containerStyle={{ backgroundColor: "yellow" }}
-        titleStyle={{ color: "red", fontSize: 30 }}
-      />
-      <Button
-        title="Raise Button"
-        type="solid"
-        raised
-      />
-      <Button
-        icon={<Ionicons name="md-checkmark-circle" size={32} color="green" />}
-        title="Icon Button"
-        color="white"
+      <TextInput
+        placeholder='enter your name'
+        value={name}
+        onChangeText={(text) = setName(text)}
       />
 
-      <Button title="loading" loading />
-      <Button title="loading" loading={false} />
+      <Button
+        title="Submit"
+        type="solid"
+        containerStyle={{ marginTop: 20 }}
+        onPress={() => Alert.alert("Welcome", "Hello" + name + ", welcome to our app")}
+      />
     </View>
   );
 }
