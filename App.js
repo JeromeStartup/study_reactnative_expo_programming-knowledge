@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Avatar } from 'react-native-elements';
 import styles from './styles';
 
@@ -12,6 +12,7 @@ export default function App() {
           uri: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60'
         }}
       />
+      <Text>Lilly</Text>
        <Avatar
         rounded
         containerStyle={{ height: 50, width: 50 }}
